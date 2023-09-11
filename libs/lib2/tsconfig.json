@@ -2,12 +2,10 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "outDir": "dist",
-    "baseUrl": ".",
-    "sourceMap": true,
-    "declarationMap": true,
+    "rootDir": "src",
     "paths": {
       "@components/*": ["./src/components/*"]
-    },
-    "composite": true
-  }
+    }
+  },
+  "include": ["src"]
 }
