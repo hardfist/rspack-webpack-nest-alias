@@ -1,0 +1,17 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "sourceMap": true,
+    "declarationMap": true,
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../../libs/lib1"
+    },
+    {
+      "path": "../../libs/lib2"
+    }
+  ]
+}

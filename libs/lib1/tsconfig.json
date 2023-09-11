@@ -1,0 +1,13 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "baseUrl": ".",
+    "sourceMap": true,
+    "declarationMap": true,
+    "paths": {
+      "@components/*": ["./src/components/*"]
+    },
+    "composite": true
+  }
+}
