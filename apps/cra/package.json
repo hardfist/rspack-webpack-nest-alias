@@ -18,5 +18,9 @@
     "lib2": "workspace:*",
     "typescript": "^5.2.2",
     "@rspack/cli": "0.3.13"
+  },
+  "devDependencies": {
+    "sass-loader": "13.3.2",
+    "sass": "1.69.5"
   }
 }

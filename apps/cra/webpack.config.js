@@ -1,8 +1,22 @@
 const TsconfigPathsPlugin = require('tsconfig-paths-webpack-plugin').TsconfigPathsPlugin;
-
+/**
+ * @type {import('webpack').Configuration}
+ */
 module.exports = {
+  mode: 'development',
   entry: {
     main: './src/index.ts',
+  },
+  module: {
+    rules: [{
+      test: /\.scss$/,
+      use: [
+        {
+          loader: 'sass-loader'
+        }
+      ],
+      type: 'css'
+    }]
   },
   resolve: {
     extensions: ['.ts', '...'],
@@ -14,4 +28,7 @@ module.exports = {
       }),
     ],
   },
+  experiments: {
+    css:true
+  }
 };
