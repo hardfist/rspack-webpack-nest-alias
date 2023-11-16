@@ -4,8 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc -b",
-    "bundle": "webpack"
+    "compile": "tsc -b",
+    "bundle": "webpack",
+    "bundle:rspack": "rspack -c ",
+    "build": "pnpm compile & pnpm bundle",
+    "build:rspack": "pnpm compile & pnpm bundle:rspack"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
   "dependencies": {
     "lib1": "workspace:*",
     "lib2": "workspace:*",
-    "typescript": "^5.2.2"
+    "typescript": "^5.2.2",
+    "@rspack/cli": "0.3.13"
   }
 }
