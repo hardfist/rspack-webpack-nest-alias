@@ -2,7 +2,18 @@
   "name": "lib2",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": [
+        "./dist/index.d.ts",
+        "./src/index.ts"
+      ],
+      "import": [
+        "./dist/index.js",
+        "./src/index.ts"
+      ]
+    }
+  },
   "scripts": {
     "build": "tsc"
   },
