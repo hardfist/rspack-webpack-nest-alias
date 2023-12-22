@@ -4,7 +4,6 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "compile": "tsc -b",
     "bundle": "webpack",
     "bundle:rspack": "rspack -c ",
     "build": "pnpm compile & pnpm bundle",

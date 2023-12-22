@@ -4,6 +4,9 @@ module.exports = {
   entry: {
     main: './src/index.ts',
   },
+  optimization: {
+    minimize: false,
+  },
   resolve: {
     extensions: ['.ts', '...'],
     plugins: [
